@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TemuBalik — Barang hilang, harapan kembali.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="security-banner">
+    <div class="container security-banner__inner">
+      <div class="security-banner__text">
+        <span class="badge badge--accent">Keamanan</span>
+        <span>TemuBalik <strong>tidak pernah</strong> meminta OTP, PIN, kata sandi, atau biaya klaim barang.</span>
+      </div>
+      <a href="#/panduan-keamanan" class="security-banner__link">Panduan Keamanan &rarr;</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#/" class="brand">
+        <div class="brand__icon">TB</div>
+        <div>
+          <span class="brand__name">Temu<span>Balik</span></span>
+          <small class="brand__tagline">Barang hilang, harapan kembali</small>
+        </div>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <a href="#/" class="nav-link" data-route="/">Beranda</a>
+        <a href="#/cari" class="nav-link" data-route="/cari">Cari Barang</a>
+        <a href="#/laporan/hilang" class="nav-link" data-route="/laporan/hilang">Hilang</a>
+        <a href="#/laporan/ditemukan" class="nav-link" data-route="/laporan/ditemukan">Ditemukan</a>
+        <a href="#/panduan-keamanan" class="nav-link" data-route="/panduan-keamanan">Panduan</a>
+        <a href="#/dashboard" class="nav-link" data-route="/dashboard">Dashboard</a>
+        <a href="#/admin/moderasi" class="nav-link nav-link--mod hidden" id="nav-mod-link" data-route="/admin/moderasi">Moderasi</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#/buat-laporan" class="btn btn--primary btn--sm">+ Buat Laporan</a>
+        <div id="auth-nav-container"></div>
+        <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+  <main id="app-content" class="main-content"></main>
+  <div id="modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card" id="modal-body"></div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+  <footer class="site-footer">
+    <div class="container site-footer__bottom">
+      <span>&copy; 2025 TemuBalik Indonesia. Sesuai spesifikasi MVP design.md.</span>
+      <span>Tanpa Biaya Klaim &bull; Privasi Terlindungi</span>
+    </div>
+  </footer>
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
